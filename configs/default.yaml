@@ -1,0 +1,14 @@
+random_seed: 42
+
+surface_code:
+  distance: 3
+  rounds: 3
+
+noise:
+  depolarizing_probability: 0.001
+
+decoder:
+  baseline: pymatching
+
+experiment:
+  shots: 1000
