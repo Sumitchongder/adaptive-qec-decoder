@@ -1,0 +1,36 @@
+experiment:
+
+  name: baseline_surface_code
+
+  output_directory: results/raw
+
+  random_seed: 42
+
+surface_code:
+
+  distances:
+
+    - 3
+    - 5
+    - 7
+    - 9
+    - 11
+
+noise:
+
+  probabilities:
+
+    - 0.0001
+    - 0.0002
+    - 0.0005
+    - 0.001
+    - 0.002
+    - 0.005
+
+simulation:
+
+  shots: 10000
+
+decoder:
+
+  type: pymatching
