@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+logs/
+*.log
+*.out
+*.err
+
+# Large generated data
+datasets/
+results/
+checkpoints/
+archive/
+
+# Environment
+.venv/
+venv/
+env/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
