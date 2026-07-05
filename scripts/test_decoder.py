@@ -18,38 +18,40 @@ generator = CircuitGenerator(
 
 circuit = generator.generate()
 
-detector_error_model = circuit.detector_error_model()
+dem = circuit.detector_error_model()
 
-generator = SyndromeGenerator(circuit)
+syndrome_generator = SyndromeGenerator(circuit)
 
-detectors, observables = generator.sample(20)
+detectors, observables = syndrome_generator.sample(
+    20
+)
 
-decoder = PyMatchingDecoder(detector_error_model)
+decoder = PyMatchingDecoder(
+    dem
+)
 
-predictions = decoder.decode(detectors)
+predictions = decoder.decode(
+    detectors
+)
 
 print()
 
 print("Detector samples")
-
 print(detectors.shape)
 
 print()
 
 print("Actual observables")
-
 print(observables.shape)
 
 print()
 
 print("Predicted observables")
-
 print(predictions.shape)
 
 print()
 
 print("First prediction")
-
 print(predictions[0])
 
 print()
