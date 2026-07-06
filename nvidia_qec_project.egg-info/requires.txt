@@ -1,0 +1,10 @@
+numpy
+scipy
+pandas
+matplotlib
+stim
+pymatching
+torch
+networkx
+pyyaml
+scikit-learn

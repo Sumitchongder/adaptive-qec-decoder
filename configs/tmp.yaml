@@ -1,0 +1,10 @@
+decoder:
+  baseline: pymatching
+experiment:
+  shots: 5000
+noise:
+  depolarizing_probability: 0.001
+random_seed: 42
+surface_code:
+  distance: 7
+  rounds: 7

@@ -1,0 +1,33 @@
+experiment:
+
+  seed: 42
+
+  shots: 100
+
+surface_code:
+
+  distance: 3
+
+  rounds: 3
+
+noise:
+
+  depolarizing_probability: 0.001
+
+training:
+
+  epochs: 10
+
+  batch_size: 64
+
+  learning_rate: 0.001
+
+decoder:
+
+  teacher: pymatching
+
+  student: neural
+
+confidence:
+
+  threshold: 0.90

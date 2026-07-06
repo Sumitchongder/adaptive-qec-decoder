@@ -1,0 +1,25 @@
+experiment:
+  name: distance3
+  seed: 42
+
+surface_code:
+  distance: 3
+  rounds: 3
+
+noise:
+  depolarizing_probability: 0.001
+
+dataset:
+  shots: 50000
+
+training:
+  epochs: 30
+  batch_size: 256
+  learning_rate: 0.001
+
+decoder:
+  teacher: pymatching
+  student: neural
+
+evaluation:
+  confidence_threshold: 0.90

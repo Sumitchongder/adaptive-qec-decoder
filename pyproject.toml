@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nvidia-qec-project"
+version = "0.1.0"
+description = "Latency-Constrained Hardware-Aware Quantum Error Correction Co-Design"
+requires-python = ">=3.10"
+
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas",
+    "matplotlib",
+    "stim",
+    "pymatching",
+    "torch",
+    "networkx",
+    "pyyaml",
+    "scikit-learn"
+]
+
+[tool.setuptools.packages.find]
+include = [
+    "decoder*",
+    "simulator*",
+    "evaluation*",
+    "experiments*",
+    "noise_models*",
+    "configs*",
+    "utils*"
+]

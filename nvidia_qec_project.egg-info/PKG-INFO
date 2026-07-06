@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: nvidia-qec-project
+Version: 0.1.0
+Summary: Latency-Constrained Hardware-Aware Quantum Error Correction Co-Design
+Requires-Python: >=3.10
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: stim
+Requires-Dist: pymatching
+Requires-Dist: torch
+Requires-Dist: networkx
+Requires-Dist: pyyaml
+Requires-Dist: scikit-learn
