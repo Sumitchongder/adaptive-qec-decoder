@@ -30,3 +30,20 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
+
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+logs/
+results/
+datasets/processed/
+checkpoints/
+
+*.out
+*.err
+
+.ipynb_checkpoints/
+.vscode/
+.idea/
